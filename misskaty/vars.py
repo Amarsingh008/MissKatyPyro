@@ -22,16 +22,16 @@ if YT_COOKIES := environ.get("YT_COOKIES"):
     else:
         LOGGER.info("Failed download YT Cookies")
 
-if API_ID := environ.get("API_ID", ""):
+if API_ID := environ.get("API_ID", "26494161"):
     API_ID = int(API_ID)
 else:
     LOGGER.error("API_ID variable is missing! Exiting now")
     sys.exit(1)
-API_HASH = environ.get("API_HASH", "")
+API_HASH = environ.get("API_HASH", "55da841f877d16a3a806169f3c5153d3")
 if not API_HASH:
     LOGGER.error("API_HASH variable is missing! Exiting now")
     sys.exit(1)
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7696666754:AAH2TzzicO9hCSI5QK3_yipiiYWggkS6WHQ")
 if not BOT_TOKEN:
     LOGGER.error("BOT_TOKEN variable is missing! Exiting now")
     sys.exit(1)
@@ -39,7 +39,7 @@ DATABASE_URI = environ.get("DATABASE_URI", "")
 if not DATABASE_URI:
     LOGGER.error("DATABASE_URI variable is missing! Exiting now")
     sys.exit(1)
-if LOG_CHANNEL := environ.get("LOG_CHANNEL", ""):
+if LOG_CHANNEL := environ.get("LOG_CHANNEL", -1002168191467""):
     LOG_CHANNEL = int(LOG_CHANNEL)
 
 else:
