@@ -35,7 +35,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "7696666754:AAH2TzzicO9hCSI5QK3_yipiiYWggkS
 if not BOT_TOKEN:
     LOGGER.error("BOT_TOKEN variable is missing! Exiting now")
     sys.exit(1)
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://2ey52z:j6TAqe4y4NIYiOaq@cluster0.hzfon.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 if not DATABASE_URI:
     LOGGER.error("DATABASE_URI variable is missing! Exiting now")
     sys.exit(1)
