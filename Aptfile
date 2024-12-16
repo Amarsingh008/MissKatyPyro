@@ -1,3 +1,1 @@
-git add Aptfile
-git commit -m "Add libgl1-mesa-glx to Aptfile"
-git push heroku.yml  # or master, depending on your branch name
+libgl1-mesa-glx
